@@ -1,6 +1,8 @@
 # Battleship Game
 
 A modern implementation of the classic Battleship board game built with React, TypeScript, and Tailwind CSS.
+
+
 ![Battleship screenshot](https://github.com/user-attachments/assets/03c1f51c-7cb7-4c4d-93a8-3f4c5111160a)
 
 
