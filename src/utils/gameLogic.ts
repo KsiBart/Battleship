@@ -1,4 +1,4 @@
-import { Board, Ship, CellState } from '../types/game';
+import { Board, Ship } from '../types/game';
 
 export function createEmptyBoard(size: number = 10): Board {
   return Array(size).fill(null).map(() => 
@@ -49,9 +49,8 @@ export function generateComputerBoard(): Board {
           positions.push((row + i) * 10 + col);
         }
       }
-      
       if (isValidPlacement(positions, board)) {
-        ship.positions = positions;
+        ship.positions = positions as never[];
         placed = true;
       }
     }
